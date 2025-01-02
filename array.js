@@ -19,8 +19,20 @@
 
 //reverse an array
 
-let arr=[2,3,6,8,4,1,9]
+// let arr=[2,3,6,8,4,1,9]
 
-for(let i=arr.length-1;i>=0;i--){
-    console.log(arr[i])
+// for(let i=arr.length-1;i>=0;i--){
+//     console.log(arr[i])
+// }
+
+//find the sum of all elements in an array
+
+let arr=[2,34,67,3,1,9,8]
+
+let sum=0
+
+for(let i=0;i<arr.length;i++){
+    sum=sum+arr[i]
 }
+
+console.log(sum)
