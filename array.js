@@ -110,11 +110,36 @@
 
 //recursion in factorial
 
-function factorial(n){
-    if(n<=1){
-        return 1
-    }
-    return n*factorial(n-1)
-}
+// function factorial(n){
+//     if(n<=1){
+//         return 1
+//     }
+//     return n*factorial(n-1)
+// }
 
-console.log(factorial(5))
+// console.log(factorial(5))
+
+
+// function f(n){
+//     if(n<=1){
+//         return 1
+//     }
+//     f(n-1)
+//     console.log(n)
+//     f(n-1)
+// }
+
+// console.log(f(3))
+
+
+//linear search
+
+// let arr=[3,2,5,7,54,9,8] //target=9
+// let searchkey=9
+// for(let i=0;i<arr.length;i++)
+// {
+//     if(searchkey==arr[i]){
+//         console.log(i) 
+//     }
+// }
+
