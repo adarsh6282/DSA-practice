@@ -57,13 +57,28 @@
 
 //factorial of a number
 
-function factorial(n){
-    let sum=1
-    for(let i=2;i<=n;i++)
+// function factorial(n){
+//     let sum=1
+//     for(let i=2;i<=n;i++)
+//     {
+//         sum*=i
+//     }
+//     return sum
+// }
+
+// console.log(factorial(5))
+
+
+//prime number
+
+function prime(n){
+    for(let i=2;i<n;i++)
     {
-        sum*=i
+        if(n%i===0){
+            return false
+        }
     }
-    return sum
+    return true
 }
 
-console.log(factorial(5))
+console.log(prime(9))
