@@ -25,14 +25,32 @@
 //     console.log(arr[i])
 // }
 
+
 //find the sum of all elements in an array
 
-let arr=[2,34,67,3,1,9,8]
+// let arr=[2,34,67,3,1,9,8]
 
-let sum=0
+// let sum=0
 
-for(let i=0;i<arr.length;i++){
-    sum=sum+arr[i]
+// for(let i=0;i<arr.length;i++){
+//     sum=sum+arr[i]
+// }
+
+// console.log(sum)
+
+
+//Fibonacci Series
+
+function fibonacci(n){
+    let fib=[0,1]
+   for(let i=2;i<n;i++)
+    {
+        fib[i]=fib[i-1]+fib[i-2]
+    } 
+    return fib
 }
 
-console.log(sum)
+console.log(fibonacci(3))
+console.log(fibonacci(6))
+console.log(fibonacci(10))
+
