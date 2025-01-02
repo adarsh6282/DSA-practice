@@ -71,14 +71,50 @@
 
 //prime number
 
-function prime(n){
-    for(let i=2;i<n;i++)
-    {
-        if(n%i===0){
-            return false
-        }
+// function prime(n){
+//     for(let i=2;i<n;i++)
+//     {
+//         if(n%i===0){
+//             return false
+//         }
+//     }
+//     return true
+// }
+
+// console.log(prime(9))
+
+
+//power of two
+
+// function isPowerOfTwo(n){
+//     if(n<1){
+//         return false
+//     }
+
+//     while (n>1) {
+//         if(n%2!==0)
+//             {
+//                 return false
+//             }else{
+//                 n=n/2
+//             }
+//     }
+//     return true
+    
+// }
+
+// console.log(isPowerOfTwo(1))
+// console.log(isPowerOfTwo(2))
+// console.log(isPowerOfTwo(5))
+
+
+//recursion in factorial
+
+function factorial(n){
+    if(n<=1){
+        return 1
     }
-    return true
+    return n*factorial(n-1)
 }
 
-console.log(prime(9))
+console.log(factorial(5))
