@@ -41,16 +41,29 @@
 
 //Fibonacci Series
 
-function fibonacci(n){
-    let fib=[0,1]
-   for(let i=2;i<n;i++)
+// function fibonacci(n){
+//     let fib=[0,1]
+//    for(let i=2;i<n;i++)
+//     {
+//         fib[i]=fib[i-1]+fib[i-2]
+//     } 
+//     return fib
+// }
+
+// console.log(fibonacci(3))
+// console.log(fibonacci(6))
+// console.log(fibonacci(10))
+
+
+//factorial of a number
+
+function factorial(n){
+    let sum=1
+    for(let i=2;i<=n;i++)
     {
-        fib[i]=fib[i-1]+fib[i-2]
-    } 
-    return fib
+        sum*=i
+    }
+    return sum
 }
 
-console.log(fibonacci(3))
-console.log(fibonacci(6))
-console.log(fibonacci(10))
-
+console.log(factorial(5))
