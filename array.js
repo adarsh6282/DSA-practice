@@ -145,19 +145,57 @@
 
 //binary search
 
-function binarysearch(arr,target){
-    let left=0
-    let right=arr.length-1
+// function binarysearch(arr,target){
+//     let left=0
+//     let right=arr.length-1
 
-    while (left<=right) {
-        let mid=Math.floor((left+right)/2)
+//     while (left<=right) {
+//         let mid=Math.floor((left+right)/2)
 
-        if(target===arr[mid]) return mid
-        if(target<arr[mid]){ right=mid-1}
-        else
-        { left=mid+1}
+//         if(target===arr[mid]) return mid
+//         if(target<arr[mid]){ right=mid-1}
+//         else
+//         { left=mid+1}
+//     }
+//     return -1
+// }
+
+// console.log(binarysearch([2,5,6,89,889],5))
+
+
+// const arr=[1,2,3,4,5,"adarsh"]
+// arr.push(6)
+// arr.unshift(0)
+// arr.pop()
+// arr.shift()
+// console.log(arr)
+
+
+//linked list class
+
+class Node{
+    constructor(value){
+        this.value=value
+        this.next=null
     }
-    return -1
 }
 
-console.log(binarysearch([2,5,6,89,889],5))
+class LinkedList{
+    constructor(){
+        this.head=null
+        this.size=0
+    }
+
+    isEmpty(){
+        return this.size===0
+    }
+
+    getSize(){
+        return this.size
+    }
+}
+
+
+const list=new LinkedList()
+console.log("list is empty",list.isEmpty())
+console.log("list size",list.getSize())
